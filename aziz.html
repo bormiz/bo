@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEENISO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #70bcff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0% auto;
+            text-align: left;
+        }
+
+        .question-container {
+            display: none;
+            background-color: #006db5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            margin: 15% auto;
+            color: #f4f4f4;
+        }
+
+        .question-container input[type="radio"] {
+            margin-bottom: 10px;
+        }
+
+        .resultParagraph1 {
+            margin-bottom: 20px;
+            color: #190079; /* Couleur du texte (rouge) */
+        }
+        .resultParagraph2 {
+            margin-bottom: 20px;
+            color: #020068; /* Couleur du texte (rouge) */
+        }
+
+        .tab {
+            display: none;
+        }
+
+        .tab.active {
+            display: block;
+        }
+        button {
+            background-color: #fff;
+            color: #3498db;
+            border: 2px solid #2980b9;
+            padding: 20px 50px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: auto;
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container">
+        
+
+        <div class="question-container tab active">
+            <h2>Do you want to make a difference in your field by experimenting professional life?</h2>
+            
+            <button class="next-tab">YES</button>
+        </div>
+
+        <div class="question-container tab">
+            <h2>do you want to gain access to exclusive resources and knowledge to advance your career?</h2>
+            
+            <button class="next-tab">YES</button>
+        </div>
+        <div class="question-container tab">
+            <h2>Do you want to overcome your struggle in mechanical and electronic design , web and mobile development and even more prototyping?</h2>
+           
+            <button class="next-tab">YES</button>
+        </div>
+        <div class="question-container tab">
+            <h2>Do you want to be a part of mind-taking events like JOBS , JET EXPO and  JET SS?</h2>
+            
+            <button class="next-tab">YES</button>
+        </div>
+
+        <div class="result-container tab">
+        <div class="resultParagraph1">
+            <h2 >JEENISO IS THE ANSWER :</h2>
+        </div>
+        
+           
+        <div class="resultParagraph2">
+            
+            <p>Junior enterprise ENISo shortly JEENISo is a non-profit student consulting office founded in 2011<br>
+                <br>
+                 where its members are selected according to many qualities such as discipline creativity commitment <br>
+                 <br>
+                 and professionalism and dedicated to achieve a main objective: prepare the future generation to face <br>
+                 <br>
+                 the job market. Offering services in web development mobile development mechanical design electronic  <br>
+                <br>
+                design and prototyping.<br>
+                <br>
+                JEENISo allows its members to conduct projects for various clients after having the needed training <br>
+                <br>
+                that ensures the improvement and the high quality standards proven by ISO 9001 v2015 certification<br>
+                <br>
+                <br>
+                If you want to know more about JEENISO  feel free to contact us.<br>
+                <br>
+                <a href="https://jeeniso.com/">Notre Site Web</a><br>
+                <br>
+                <a href="https://www.facebook.com/ENISo.junior.entreprise">facebook</a><br>
+                <br>
+                <a href="https://www.instagram.com/junior.entreprise.eniso/">Instagram</a><br>
+                <br>
+                <a href="https://tn.linkedin.com/company/junior-entreprise-eniso">Linkedin</a>
+
+            </p>
+            
+        </div>
+        
+    
+
+    <script>
+        var tabs = document.querySelectorAll('.tab');
+        var nextButtons = document.querySelectorAll('.next-tab');
+
+        nextButtons.forEach(function(button, index) {
+            button.addEventListener('click', function() {
+                tabs[index].classList.remove('active');
+                tabs[index + 1].classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
